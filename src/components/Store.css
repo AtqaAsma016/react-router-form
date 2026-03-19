@@ -1,0 +1,76 @@
+.store-page {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid #edf0f4;
+  box-shadow: 0 10px 40px rgba(84, 93, 115, 0.08);
+  padding: 1.25rem;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.store-hero {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.store-hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 0.35rem;
+  color: #111827;
+  letter-spacing: -0.4px;
+}
+
+.store-hero p {
+  margin: 0;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  border-radius: 999px;
+  border: 1px solid #dbe2ea;
+  background: #fff;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-btn.active {
+  background: #f97316;
+  border-color: #f97316;
+  color: #fff;
+}
+
+.filter-btn:hover {
+  border-color: #c4cdd9;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.95rem;
+  margin-top: 0.6rem;
+}
+
+.toast {
+  margin-top: 1rem;
+  border-radius: 12px;
+  padding: 0.65rem 0.8rem;
+  background: #e9f7ec;
+  color: #0f5132;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid #c7eedb;
+}

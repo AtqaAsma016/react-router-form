@@ -1,0 +1,59 @@
+.about-page {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid #edf0f4;
+  box-shadow: 0 10px 40px rgba(84, 93, 115, 0.08);
+  padding: 2rem 1.5rem;
+}
+
+.about-page h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  color: #111827;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.about-lead {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-block {
+  background: linear-gradient(135deg, #f8fafc 0%, #fafbfc 100%);
+  border: 1px solid #edf0f4;
+  border-radius: 14px;
+  padding: 1.8rem 1.3rem;
+  transition: all 0.2s ease;
+}
+
+.about-block:hover {
+  border-color: #f97316;
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.12);
+  transform: translateY(-2px);
+}
+
+.about-block h3 {
+  font-size: 1.2rem;
+  color: #111827;
+  margin: 0 0 0.75rem 0;
+  font-weight: 700;
+}
+
+.about-block p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}

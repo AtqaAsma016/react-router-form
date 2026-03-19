@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: #f5f7fb;
+  color: #111;
+  line-height: 1.4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
+#root {
   min-height: 100vh;
+  background: #f5f7fb;
+}
+
+/* ── Header ── */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eef1f5;
+  padding: 0 1.2rem;
+  height: 68px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(3px);
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5f6368;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover {
+  color: #111;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.cart-badge {
+  background: #f97316;
+  color: #fff;
+  border-radius: 999px;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.connect-btn {
+  background: #f97316;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 9px 15px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.connect-btn:hover:not(:disabled) {
+  background: #e66a11;
+}
+
+.connect-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+main {
+  min-height: calc(100vh - 68px);
+  width: min(1100px, 92vw);
+  margin: 1.25rem auto;
+  padding-bottom: 2rem;
 }
