@@ -59,7 +59,7 @@ react-router-form/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/react-router-form.git
+   git clone https://github.com/AtqaAsma016/react-router-form.git
    cd react-router-form
    ```
 
@@ -145,20 +145,6 @@ The app uses a **component-driven architecture:**
 
 4. **Context-ready** for future Redux/Context API implementation
 
-## Web3 Integration
-
-### Wallet Connection
-- Uses native `window.ethereum` API (MetaMask injected provider)
-- No heavy Web3 libraries for minimal bundle size
-- Supports all Ethereum-compatible wallets
-- Error handling for missing MetaMask
-- Connection state management
-
-### Supported Networks
-- Binance Smart Chain (BSC) - recommended for BNB
-- Ethereum Mainnet
-- Any EVM-compatible chain
-
 ## Styling
 
 The project uses a custom CSS design system:
@@ -179,8 +165,6 @@ The project uses a custom CSS design system:
 ```bash
 npm start          # Start dev server at localhost:3000
 npm build          # Build for production
-npm test           # Run tests
-npm eject          # Eject from CRA (irreversible)
 ```
 
 ## Performance
@@ -196,45 +180,6 @@ npm eject          # Eject from CRA (irreversible)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-- MetaMask extension required for Web3 features
 
-## Future Enhancements
-
-- [ ] Implement blockchain transaction functionality
-- [ ] Add checkout with smart contract integration
-- [ ] Support multiple wallet providers (WalletConnect, Coinbase)
-- [ ] Product image uploads
-- [ ] Order history tracking
-- [ ] Admin dashboard for inventory
-- [ ] Dark/Light theme toggle
-- [ ] Internationalization (i18n)
-
-## Contributing
-
-1. Fork this repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Contact & Support
-
-For questions or support:
-- Use the **Contact** page in the app
-- Open an issue on GitHub
-- Email: support@web3cart.example
-
-## Deployed Links
-
-- **GitHub:** https://github.com/YOUR_USERNAME/react-router-form
-- **Live Demo:** (Add deployment link when available)
 
 ---
-
-**Made with ❤️ by the Web3 Shopping Cart Team**
-
-*Last Updated: March 2026*
